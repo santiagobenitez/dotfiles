@@ -2,9 +2,6 @@
 " plugins depend on it during start up.
 set backspace=indent,eol,start
 
-" Enable invisible characters.
-set list
-
 " More natural splitting.
 set splitbelow
 set splitright
@@ -28,6 +25,3 @@ set completeopt-=preview
 
 " Make session files minimal.
 set sessionoptions=blank,curdir,folds,help,tabpages,winsize
-
-" Improve encryption.
-set cryptmethod=blowfish2
