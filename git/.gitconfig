@@ -1,34 +1,37 @@
 [user]
-    name = Santiago Benitez 
-    email = santiagobenitez06@gmail.com
+	name = Santiago Benitez 
+	email = santiagobenitez06@gmail.com
 [core]
-    editor = vim
-    excludesfile = ~/.gitexcludes
+	editor = vim
+	excludesfile = ~/.gitexcludes
 [color]
-    ui = true
+	ui = true
 [push]
-    default = simple
+	default = simple
 [diff]
-    tool = vimdiff
+	tool = vimdiff
 [merge]
-    tool = vimdiff
-    conflictstyle = diff3
+	tool = vimdiff
+	conflictstyle = diff3
 [mergetool]
-    keepbackup = false
+	keepbackup = false
 [include]
-    path = ~/.gitconfig_local
+	path = ~/.gitconfig_local
 [alias]
-    s = status -sb
-    b = branch
-    c = commit -v
-    a = add
-    co = checkout
-    l = pull
-    p = push
-    f = fetch
-    mt = mergetool
-    m = merge
-    r = remote
-    re = rebase
-    lg = log --stat
-    d = diff
+	s = status -sb
+	b = branch
+	c = commit -v
+	a = add
+	co = checkout
+	l = pull
+	p = push
+	f = fetch
+	mt = mergetool
+	m = merge
+	r = remote
+	re = rebase
+	lg = log --stat
+	d = diff
+	ls-c = diff --name-only --diff-filter=U
+	ll-c = ls-files -u
+	vdiff = difftool --tool=vimdiff
