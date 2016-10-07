@@ -29,13 +29,13 @@
 	mt = mergetool
 	m = merge
 	r = remote
-	re = rebase
+	re = rebase --ignore-date
 	lg = log --stat
 	d = diff
 	ls-c = diff --name-only --diff-filter=U
 	ll-c = ls-files -u
 	vdiff = difftool --tool=vimdiff
-    rec = rebase --continue
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	rec = rebase --continue
+    	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    	lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	pu = push -u
